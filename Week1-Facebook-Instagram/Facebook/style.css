@@ -1,0 +1,225 @@
+header{
+    position: relative;
+    background: linear-gradient(rgb(70,91,149), rgb(70,91,149));
+    height: 150px;
+    margin-top: -10px;
+    border-bottom: 2px, solid rgb(19,55,131);
+}
+.TopDiv{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.BottomDiv{
+    width: 1000px;
+    margin: 40px auto;
+}
+    body{
+        background: linear-gradient(white, #E5ECEC);
+       
+    }
+    .FB-logo{
+        position: relative;
+        float: left;
+
+        width: 400px;
+    }
+    .LogIN{
+        margin-left: -100px;
+        width: 50%;
+        float: left;
+    }
+    .TopDiv label{
+        color: white;
+    }
+    .Email{
+        height: 20px;
+        width: 280px;
+        font-size: 16px;
+        padding-left: 400px;
+    } 
+   
+    .Password{
+        padding-left: 700px;
+        margin-top: -20px;
+        height: 20px;
+        width: 280px;
+        font-size: 16px;
+    }
+  
+    .Password a{
+        color: rgb(140, 158, 219);
+        right:0px;
+    }
+    .LoginBtn{
+        padding-left: 900px;
+        padding-top:-60px;
+        
+    }
+    .LoginBtn input{
+        border: 1px solid rgb(40, 70, 125);
+        border-radius: 2px;
+        color: white;
+        background: rgb(70, 95, 178);
+        height: 30px;
+        width: 60px; 
+       
+        
+    }
+    .LoginBtn input:hover{
+        background: rgb(19,55,139);
+        cursor: pointer;
+    }
+    .KeepInTouch{
+        margin-top: 50px;
+        float: left;
+        width: 55%;
+        
+    }
+    .KeepInTouch p{
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(34, 44, 81);    
+    }
+    .KeepInTouch image{
+      position: relative;
+    }
+    .account{
+        width: 45%;
+        float: left;
+    }
+    .LogUp h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    .LogUp p{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .LogUp .Always free{
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+  
+    .account input[type="text"]{
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    .account input[type="password"]{
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+    .account input[type="radio"]{
+        margin-bottom: 20px;
+        margin-top: 15px;
+        border-radius: 20px;
+    }
+    .account input[type="date"]{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .account input[type="submit"]{
+        height: 30px;
+        width: 200px;
+        font-weight: solid;
+        background: rgb(101, 169, 83);
+        border: 1px solid rgb(59, 110, 34);
+        font-size: 23px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .account label{
+        font-size: 20px;
+        font-weight: medium;
+        margin-bottom: 15px;
+    }
+    .account .click{
+        color: rgb(119, 119, 122);
+        font-size: 12px;
+        
+    }
+    .account .pageForStars{
+        color: rgb(61, 61, 41);
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .account .emailOrNumber, .newPassword{
+        width: 84%;
+    }
+    .tooltip{
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px;
+        color: rgb(79, 79, 143);
+        cursor: pointer;
+        width: 270px;
+
+    }
+    .tooltip .tooltiptext{
+        visibility: hidden;
+        height: 180px;
+        width: 320px;
+        background-color:white;
+        color: black;
+        text-align: left;
+        padding: 10px 10px;
+        border-radius: 12px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -40px;
+        cursor: text;
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+        }
+
+    /* Tooltip arrow */
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 40%;
+        margin-left: -70px;
+        border-width: 23px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+        cursor: text;
+        }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    footer{
+        position: relative;
+        background: white;
+        margin-top:500px;
+        height: 100px;
+       
+    }
+    #lang, .foot a{
+        padding-left: 60px;
+    }
+    .foot a{
+        color: rgb(60, 60, 138);
+        text-decoration: none;
+    }
+    .foot p{
+        margin-left: 60px;
+        margin-bottom: -3px;
+    }

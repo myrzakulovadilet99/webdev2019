@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Войдите на Facebook</title>
+        <link rel="icon" href="images/fB.ico">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head> 
+    <body>
+        <header>
+
+            <div class="TopDiv">
+
+                <div class="FB-logo"> 
+                    <a href="https://www.facebook.com/" target="_blank"><img style="position: static; left: -100px; bottom: 0px; height:130px; width: 320px;" src="images/logo.jpg" id="Logo"/></a>
+                </div>
+
+                <div class="LogIn">
+                    <form action="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110" method="POST">
+                    <div class="Email">
+                        <label for="email">Электронный адрес или номер телефона</label>
+                        <input type="text" name="email" id="email" autofocus> 
+                    </div>
+                            
+                    <div class="Password">
+                        <label for="password">Пароль</label><br>
+                        <input type="password" id="password" name="password"><br>
+                        <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar" style="text-decoration: none">Забыли аккаунт?</a>
+                    </div>
+                    <div class="LoginBtn">
+                        <input type="submit" value="Вход">
+                    </div>
+                </form>
+                </div> 
+            </div>
+        </header>
+        <div class="BottomDiv">
+            <div class="KeepInTouch">
+                <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+                <img src="images/uses.png" height="250" width="500" alt="users" />
+            </div>
+
+            <div class="LogUp">
+                <h2>Регистрация</h2>
+                <p class="Always free">Это бесплатно и всегда будет бесплатно</p>
+
+                <div class="account">
+                    <form action="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2F&rd&__req=10" method="POST">
+                            <input type = "text" name = "first-name" placeholder= "Имя" required>
+                            <input type = "text" name = "surname" placeholder = "Фамилия" required><br>
+                            <input type = "text" name = "emailOrNumber" class = "emailOrNumber" placeholder = "Номер мобильного телефона или эл. адрес" required><br>
+                            <input type = "password" name = "newPassword" class = "newPassword" placeholder = "Новый пароль" required><br>
+                            <label>Дата рождения</label><br>
+                            <input type = "date" name = "date" required>
+                           
+                            <div class="tooltip">Зачем указывать дату рождения?
+                                <span class="tooltiptext">Если вы укажете дату рождения, мы сможем показывать вам на Facebook контент, актуальный человеку вашего возраста. Если вы хотите изменить то, кто может видеть вашу дату рождения, перейдите в раздел «Информация» своего профиля. Более подробную информацию можно найти в нашей <a href="https://ru-ru.facebook.com/privacy/explanation/">Политике использования данных.</a></span>
+                            </div>
+                            <input type = "radio" name = "gender" required>
+                            <label class="Female"> Женщина </label>
+                            <input type = "radio" name = "gender">
+                            <label class="Male"> Мужчина </label><br>
+    
+                            <span class="click">Нажимая кнопку регистрация, вы принимаете <a href = "https://www.facebook.com/legal/terms/update" target="_blank" style="text-decoration: none;"> Условия</a>,<a href = "https://www.facebook.com/about/privacy/update" style="text-decoration: none";target="_blank">Политику использования данных </a>и<a href = "https://www.facebook.com/policies/cookies/" target= "_blank" style="text-decoration: none"> Политику в отношении файлов cookie</a>.
+                            Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</span><br>
+                            <br>
+                            <input type="submit" value="Регистрация"><br>
+                            <span class="pageForStars"><a href = "https://www.facebook.com/pages/creation/?ref_type=registration_form" style="text-decoration: none"> Создать Страницу</a> знаменитости, музыкальной группы или компании.</span><br>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="foot">
+        <span id="lang" >Русский</span>
+        <a href="https://www.facebook.com/">English (US)</a>
+        <a href="https://tr-tr.facebook.com/">Türkçe</a>
+        <a href="https://id-id.facebook.com/">Bahasa Indonesia</a>
+        <a href="https://zh-cn.facebook.com/">中文(简体)</a>
+        <a href="https://kk-kz.facebook.com/">Қазақша</a>
+        <a href="https://de-de.facebook.com/">Deutsch</a>
+        <a href="https://ko-kr.facebook.com/">한국어</a>
+        <a href="https://sq-al.facebook.com/">Shqip</a>
+        <a href="https://es-la.facebook.com/">Español</a>
+        <a href="https://pt-br.facebook.com/">Português (Brasil)</a>
+        <p>........................................................................................................................................................................................................................................................................................................................................................</p>
+    </footer>
+</html>
