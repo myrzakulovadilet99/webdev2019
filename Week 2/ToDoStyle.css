@@ -1,0 +1,158 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.header{
+     min-height: 10%;
+     width: 100%;
+     border: 1px solid black;
+     background: black;
+}
+
+#MediumList{
+    color: grey;
+    margin-left: 150px;
+}
+
+h1{
+    font-family: Arial;
+    left:5%;
+    top:15%;
+    margin-top: 50px;
+    font-size:25px;
+    margin-left: 350px;
+}
+
+#Input{
+    width: 600px;
+    margin-left: 410px;
+    height: 30px;
+    border-radius: 4px;
+}
+#btn{
+
+    width: 60px;
+    height: 35px;
+    background: blue;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
+p {
+
+    float: right;
+
+    margin-top: 10px;
+
+}
+
+
+.Check{
+
+    width: 20px;
+
+    height: 30px;
+
+    float: left;
+
+}
+
+.Span{
+
+    font-size: 20px;
+
+    width: 200px;
+
+    height: 50px;;
+
+    float: left;
+
+    padding: 10px;
+
+}
+
+.newDivClass{
+
+    font-size: 20px;
+
+    
+
+    width: 200px;
+
+    height: 50px;;
+
+    float: left;
+
+    padding: 10px;
+
+}
+
+.newDivClass p{
+
+    text-decoration: line-through;
+
+}
+
+.newLi{
+
+    background-color: blue;
+
+}
+
+.myImage{
+
+    width: 30px;
+
+    height: 30px;
+
+    margin-top: 7px;
+
+    margin-right: 20px;
+
+    float: right;
+
+}
+
+
+ul{
+
+    list-style-type:none;
+
+    }
+
+li{
+
+    border: 2px solid blue;
+
+    width: 650px;
+
+    height: 60px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    margin-left: 350px;
+
+   
+
+}
+
+.todoDiv{
+
+    border: 2px solid blue;
+
+    width: 550px;
+
+    height: 25px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    
+
+}
