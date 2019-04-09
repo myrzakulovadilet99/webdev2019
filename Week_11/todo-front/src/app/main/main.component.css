@@ -1,0 +1,11 @@
+.main{
+    background: rgb(10, 33, 48);
+    color: aliceblue;
+  }
+
+.tasks{
+  font-size: 20px;
+  background: yellow;
+  color: white;
+  margin: 10px;
+}
