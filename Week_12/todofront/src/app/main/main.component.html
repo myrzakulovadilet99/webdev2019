@@ -1,0 +1,58 @@
+ <!-- <body>
+  <ng-container *ngIf="loading">
+    <div class="tasklists">
+      <div class="tasklists_title">TASKLISTS:</div>
+      <div class="tasklists_item" *ngFor="let tl of task_lists" (click)="getTasks(tl)">
+        <div class="tasklists_id">{{tl.id}} - {{tl.name}}</div>
+      </div>
+    </div>
+  </ng-container>
+
+  <div class="tasks">
+    <h1>Tasks:</h1>
+    <div class="tasks_item" *ngFor="let t of tasks">  
+      <div class="tasks_id">ID: {{t.id}}</div>
+      <div class="tasks_name">NAME: {{t.name}}</div>
+      <div class="tasks_status">STATUS: {{t.status}}</div>
+      <div class="tasks_createdat">WAS CREATED AT: {{t.created_at}}</div>
+      <div class="tasks_dueon">HAVE TO FINISH UNTIL: {{t.due_on}}</div>
+    </div>
+  </div> 
+</body> -->
+
+<div>
+  <input type="text" [(ngModel)]="name" />
+  <button (click) = "createTaskList()" >Create</button>
+</div>
+
+
+
+TaskLists
+
+<ng-container *ngIf="!loading">
+Loading...
+</ng-container>
+
+<ng-container *ngIf ="loading">
+  <div>
+      <div *ngFor = "let l of task_lists">
+          <span (click) = "getTasks(l)" >
+            <input type="text" [(ngModel)] = "l.name">  
+          </span>
+          <span style="color: brown; font-size: 20px" (click) = "deleteTaskList(l)" > DELETE</span>
+          <span style="color: green; font-size: 20px" (click) = "updateTaskList(l)" > EDIT</span>
+          <span style="color:blueviolet;font-size: 20px" (click)="getListOfTasks(l)"> TASKS</span>
+          
+        </div>
+  </div> 
+</ng-container>
+  
+<br>
+
+Tasks:
+
+<div>
+  <div *ngFor="let p of tasks"> 
+    <h2>{{p.name}}</h2>
+  </div>
+</div>
