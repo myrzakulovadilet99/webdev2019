@@ -1,0 +1,58 @@
+<ng-container *ngIf="!isLogged">
+  <div>
+    <div>
+      <input class="lists" type="text" placeholder="Login" [(ngModel)]="login"/>
+    </div>
+    <div>
+      <input class="lists" type="password" placeholder="Password" [(ngModel)]="password"/>
+    </div>
+    <div>
+      <button class="btn" (click)="auth()">Log in</button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="isLogged">
+  <p class="text">To create new TaskList write the name below:</p>
+  <div>
+    <input class="lists" type="text" [(ngModel)]="name" />
+    <button class="btn1" (click) = "createTaskList()" >Create TaskList</button>
+  </div>
+
+
+  <p class="text">TaskLists:</p>
+
+  <ng-container *ngIf="!loading">
+  <p class="text">Loading...</p>
+  
+  </ng-container>
+
+  <ng-container *ngIf ="loading">
+    <div>
+        <div *ngFor = "let l of task_lists">
+            <span (click) = "getListOfTasks(l)" >
+              <input class="lists" type="text" [(ngModel)] = "l.name">  
+            </span>
+            <span class="delete" (click) = "deleteTaskList(l)" > DELETE</span>
+            <span class="edit" (click) = "updateTaskList(l)" > EDIT</span>
+            <span class="show" (click)="getListOfTasks(l)"> TASKS</span>
+            
+          </div>
+    </div> 
+  </ng-container>
+    
+  <br>
+  <p class="text">Tasks:</p>
+
+  <div>
+    <div *ngFor="let t of tasks"> 
+      <input class="lists" type="text" [(ngModel)] = "t.name">
+      <br>
+    </div>
+  </div>
+  <br>
+  <div>
+    <button class="btn" (click)="logout()">Log out</button>
+  </div>
+
+</ng-container>
